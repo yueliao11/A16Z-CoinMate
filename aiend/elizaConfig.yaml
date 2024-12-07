@@ -1,0 +1,36 @@
+services:
+    llama:
+        enabled: true
+        config:
+            model: llama3.2
+            baseURL: http://127.0.0.1:11434
+
+actions:
+    crypto:
+        enabled: true
+        handlers:
+            getCryptoPrice:
+                path: "./custom_actions/crypto/getCryptoPrice"
+                type: "function"
+            getCryptoNews:
+                path: "./custom_actions/crypto/getCryptoNews"
+                type: "function"
+            analyzeCrypto:
+                path: "./custom_actions/crypto/analyzeCrypto.ts"
+                type: "function"
+
+services:
+    - name: PRICE
+      type: crypto
+      endpoint: https://api.binance.com
+
+    - name: NEWS
+      type: crypto
+      endpoint: https://cryptonews-api.com
+
+evaluators:
+    - name: CRYPTO_EVAL
+      path: ./custom_actions/crypto/analyzeCrypto.ts
+
+`
+</rewritten_file>
