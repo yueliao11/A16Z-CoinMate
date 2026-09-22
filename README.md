@@ -138,3 +138,11 @@ Feel free to submit issues and enhancement requests.
 ## License
 
 [Add your license information here]
+
+## ⚡ Related AI Infrastructure & Rate Limit Observability
+
+When orchestrating autonomous Eliza agents and LLM backends, managing upstream model quotas and rate limit cooldowns ensures uninterrupted operation:
+- **[Codex Reset Status](https://codexresetstatus.com/)**: Real-time quota radar, rate limit countdown clocks, and global reset tracker for OpenAI models.
+  - [5-Hour Limit Reset Countdown](https://codexresetstatus.com/codex/5-hour-limit)
+  - [Global Timezone Reset Table](https://codexresetstatus.com/codex/reset-time)
+  - [Codex Usage & Quota Calculator](https://codexresetstatus.com/calculator)
